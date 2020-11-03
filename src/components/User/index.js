@@ -4,6 +4,7 @@ function User({ name, email, city, phone, company }) {
   return (
     <div className="user">
       <h3 className="user-name">{name}</h3>
+      <h4 className="user-company">{company}</h4>
       <a href={`mailto:${email}`}>
         <p className="user-email">{email}</p>
       </a>

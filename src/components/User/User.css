@@ -7,10 +7,16 @@
 }
 
 .user-name {
-  margin-top: 0;
+  margin: 0 0 0.5rem 0;
+  font-size: 1.5rem;
 }
 
 .user-email {
   font-size: 0.9rem;
+}
+
+.user-company {
+  margin: 0;
+  font-size: 1.15rem;
 }
 

@@ -24,7 +24,7 @@ function Users () {
       {!users.length && <p className="users-none-message">No users yet. Please click the "See Users" button to see them.</p>}
 
       <div className="users-list-container">
-        {!!users.length && users.map(user => <User name={user.name} email={user.email} city={user.address.city} phone={user.phone} />)}
+        {!!users.length && users.map(user => <User name={user.name} email={user.email} city={user.address.city} phone={user.phone} company={user.company.name} />)}
       </div>
 
       <button className="users-show-button" onClick={getUsers}>See Users</button>
