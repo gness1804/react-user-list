@@ -16,3 +16,16 @@
 .users-show-button:hover {
   background-color:#39a7bd;
 }
+
+.users-list-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (min-width: 1000px) {
+  .users-list-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

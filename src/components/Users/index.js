@@ -19,7 +19,9 @@ function Users () {
     <div className="users">
       {!users.length && <p className="users-none-message">No users yet. Please click the button to see them.</p>}
 
-      {!!users.length && users.map(user => <User name={user.name} />)}
+      <div className="users-list-container">
+        {!!users.length && users.map(user => <User name={user.name} email={user.email} />)}
+      </div>
 
       <button className="users-show-button" onClick={getUsers}>See Users</button>
     </div>

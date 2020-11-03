@@ -1,7 +1,12 @@
+import './User.css';
+
 function User({ name, email, city, zipcode, phone, company }) {
   return (
-    <div>
-      <h3>{name}</h3>
+    <div className="user">
+      <h3 className="user-name">{name}</h3>
+      <a href={`mailto:${email}`}>
+        <p className="user-email">{email}</p>
+      </a>
     </div>
   );
 }

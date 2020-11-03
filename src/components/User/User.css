@@ -1,0 +1,16 @@
+.user {
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 0.5rem;
+  width: 40%;
+  margin: 10px auto;
+}
+
+.user-name {
+  margin-top: 0;
+}
+
+.user-email {
+  font-size: 0.9rem;
+}
+
