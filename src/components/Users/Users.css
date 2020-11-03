@@ -3,6 +3,11 @@
 }
 
 .users-show-button {
+  margin-right: 1rem;
+}
+
+.users-show-button,
+.users-hide-button {
   border-radius: 0;
   color: #fff;
   background-color: darkblue;
@@ -13,7 +18,8 @@
   font-weight: 700;
 }
 
-.users-show-button:hover {
+.users-show-button:hover,
+.users-hide-button:hover {
   background-color:#39a7bd;
 }
 

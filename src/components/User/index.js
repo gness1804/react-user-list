@@ -7,6 +7,7 @@ function User({ name, email, city, zipcode, phone, company }) {
       <a href={`mailto:${email}`}>
         <p className="user-email">{email}</p>
       </a>
+      <p>{`City: ${city}`}</p>
     </div>
   );
 }

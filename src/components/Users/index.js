@@ -15,15 +15,20 @@ function Users () {
     }
   }
 
+  const hideUsers = () => {
+    setUsers([]);
+  }
+
   return (
     <div className="users">
-      {!users.length && <p className="users-none-message">No users yet. Please click the button to see them.</p>}
+      {!users.length && <p className="users-none-message">No users yet. Please click the "See Users" button to see them.</p>}
 
       <div className="users-list-container">
-        {!!users.length && users.map(user => <User name={user.name} email={user.email} />)}
+        {!!users.length && users.map(user => <User name={user.name} email={user.email} city={user.address.city} />)}
       </div>
 
       <button className="users-show-button" onClick={getUsers}>See Users</button>
+      <button className="users-hide-button" onClick={hideUsers}>Hide Users</button>
     </div>
   )
 }
