@@ -4,7 +4,7 @@ import Users from '../Users/';
 function Main(){
   return (
     <div className="main">
-      <h2>See below for our current users:</h2>
+      <h2 className="main-header">See below for our current users:</h2>
       <Users />
     </div>
   );
